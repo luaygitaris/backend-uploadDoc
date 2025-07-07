@@ -4,16 +4,14 @@ const { config } = require("dotenv");
 config();
 
 const pool = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "libraayra", // sesuaikan dengan password baru
-  database: "test",
-  // waitForConnections: true,
-  // connectionLimit: 10,
-  // queueLimit: 0,
-  // connectTimeout: 100000,
-  // acquireTimeout: 100000,
-  // timeout: 10000,
+  // host: "localhost",
+  // user: "root",
+  // password: "libraayra",
+  // database: "test",
+  host: "sql12.freesqldatabase.com",
+  user: "sql12788264",
+  password: "ZbzhGiDCcK", // sesuaikan dengan password baru
+  database: "sql12788264",
 });
 
 module.exports = pool;
